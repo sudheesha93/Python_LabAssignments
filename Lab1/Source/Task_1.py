@@ -13,6 +13,5 @@ with open('../file.txt', 'r+') as file:                  # To read a file and as
                 freqwordcount[word] = 1                                 # Calculate the frequency of each word
             else:
                 freqwordcount[word] = freqwordcount[word]+1                                # If the word is already present increment the count by 1
-    for i, j in freqwordcount.items():                   # To display allthe words in text file along with their frequency of occurences which is equal to the wordcount
-        print(i, j)
+    print(word, freqwordcount)
 file.close()
