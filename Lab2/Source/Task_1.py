@@ -13,6 +13,6 @@ for item in a:
     if item not in b:
         b.add(item)
         result.append(item)                             # appending the unique items into the list
-res=sorted(result)                                      # sorting the list alphanumerically
-print(' '.join(word for word in res))
+sort=sorted(result)                                      # sorting the list alphanumerically
+print(' '.join(word for word in sort))
 
