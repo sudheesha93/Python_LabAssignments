@@ -14,12 +14,6 @@ from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
 import pylab as pl
 
-""" kmeans=KMeans(n_clusters=5)
-# fitting a model
-ypred=kmeans.fit_predict(cust_df) """
-
-
-
 # Fitting a model to the dataset given
 kmeans = KMeans(n_clusters = 5, init = 'k-means++', random_state = 10)
 ypred = kmeans.fit_predict(cust_df)

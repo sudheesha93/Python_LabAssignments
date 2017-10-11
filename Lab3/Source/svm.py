@@ -4,13 +4,6 @@ from sklearn import metrics
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
 
-#loading the dataset
-#univ_bank=pd.read_csv(data_path+'UniversalBank.csv')
-#cc_approval=univ_bank['CreditCard']
-#del univ_bank['CreditCard']
-#univ_bank=univ_bank.values
-#cc_approval=cc_approval.values
-
 #mnist = fetch_mldata('MNIST original', data_home=data_path)
 data_path = 'C:/Users/sudheesha/Documents/GitHub/Python_LabAssignments/Lab3/Source/data/'
 mnist=pd.read_csv(data_path+'mnist.csv')
@@ -25,9 +18,7 @@ X_train,X_test,y_train,y_test=train_test_split(mnist_data,mnist_target,test_size
 
 # fitting the linear model
 svm_lin=SVC(kernel='linear')
-
 svm_lin.fit(X_train,y_train)
-
 preds_lin=svm_lin.predict(X_test)
 x=metrics.accuracy_score(y_test, preds_lin)
 print('Accuracy by using the linear kernel on the data')
